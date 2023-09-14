@@ -12,4 +12,7 @@ for (const char of sentence) {
 }
 
 // Writes a final newline character so next prompt starts on its own line
-process.stdout.write('\n');
+// Uses end timer value to ensure it is written after the string has completed
+setTimeout(() => {
+  process.stdout.write('\n')
+}, timer);
