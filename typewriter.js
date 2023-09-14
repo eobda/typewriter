@@ -1,5 +1,6 @@
 const sentence = "hello there from lighthouse labs";
 
+// Prints each character of sentence
 for (const char of sentence) {
-  console.log(char);
+  process.stdout.write(char);
 }
